@@ -1,0 +1,226 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+/* BODY */
+body{
+  background:#f5f5f5;
+  color:#333;
+}
+
+/* HEADER */
+header{
+  background:url('background.jpg');
+  background-size:cover;
+  background-position:center;
+  height:90vh;
+  position:relative;
+}
+
+.overlay{
+  background:rgba(0,0,0,0.6);
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  text-align:center;
+}
+
+.overlay h1{
+  font-size:65px;
+}
+
+.overlay p{
+  margin-top:15px;
+  font-size:24px;
+}
+
+.btn{
+  margin-top:20px;
+  padding:14px 30px;
+  background:#f77c01;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  font-size:18px;
+}
+
+.btn:hover{
+  background:#ff0404;
+}
+
+/* NAVBAR */
+nav{
+  background:#111;
+  padding:15px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav a{
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+  margin:0 15px;
+  font-size:18px;
+}
+
+nav a:hover{
+  color:rgb(255, 0, 0);
+}
+
+/* SECTIONS */
+section{
+  padding:70px 10%;
+}
+
+.title{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:40px;
+  color:#d35400;
+}
+
+.white{
+  color:white;
+}
+
+/* MENU */
+.menu-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.menu-card{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgb(255, 255, 255);
+  transition:0.3s;
+}
+
+.menu-card:hover{
+  transform:translateY(-8px);
+}
+
+.menu-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.menu-card h3{
+  padding:15px 15px 5px;
+  color:#6b0701;
+}
+
+.menu-card p{
+  padding:0 15px;
+}
+
+.menu-card h4{
+  padding:15px;
+}
+.more h3{
+   background-position:center;
+}
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+
+.gallery img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* FORMS */
+.order-form,
+.reservation-form{
+  max-width:650px;
+  margin:auto;
+  background:rgb(57, 28, 28);
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgb(0, 0, 0);
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea,
+.reservation-form input,
+.reservation-form textarea{
+  width:100%;
+  padding:14px;
+  margin:12px 0;
+  border:1px solid #000000;
+  border-radius:5px;
+  font-size:16px;
+}
+
+.order-form button,
+.reservation-form button{
+  width:100%;
+  padding:15px;
+  border:none;
+  background:#050200;
+  color:white;
+  font-size:18px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.order-form button:hover,
+.reservation-form button:hover{
+  background:#ff0000;
+}
+
+/* CONTACT */
+.contact{
+  background:#222;
+  color:white;
+  text-align:center;
+}
+
+.contact p{
+  margin:10px 0;
+  font-size:18px;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .overlay h1{
+    font-size:45px;
+  }
+
+  .overlay p{
+    font-size:18px;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+
+}
