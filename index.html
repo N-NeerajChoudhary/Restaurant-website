@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="overlay">
+      <h1>One Bites</h1>
+      <p>Authentic Indian Cuisine </p>
+      <a href="#order" class="btn">Order Now</a>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#order">Online Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- MENU -->
+  <section id="menu">
+    <h2 class="title">Indian Menu</h2>
+
+    <div class="menu-container">
+
+      <div class="menu-card">
+        <img src="butter chicken.jpg" alt="">
+        <h3>Butter Chicken</h3>
+        <p>Creamy tomato gravy with tender chicken.</p>
+        <h4>₹649</h4>
+      </div>
+
+      <div class="menu-card">
+        <img src="paneer tikka.jpg" alt="">
+        <h3>Paneer Tikka</h3>
+        <p>Grilled paneer cubes with Indian spices.</p>
+        <h4>₹299</h4>
+      </div>
+
+      <div class="menu-card">
+        <img src="biryani.jpg" alt="">
+        <h3>Hyderabadi Biryani</h3>
+        <p>Traditional dum biryani with rich flavors.</p>
+        <h4>₹399</h4>
+      </div>
+
+      <div class="menu-card">
+        <img src="masala dosa.jpeg" alt="">
+        <h3>Masala Dosa</h3>
+        <p>South Indian crispy dosa with potato filling.</p>
+        <h4>₹119</h4>
+      </div>
+
+      <div class="menu-card">
+        <img src="chole-bhature.webp" alt="">
+        <h3>Chole Bhature</h3>
+        <p>Punjabi chole served with fluffy bhature.</p>
+        <h4>₹149</h4>
+      </div>
+
+      <div class="menu-card">
+        <img src="gulab jamun.webp" alt="">
+        <h3>Gulab Jamun</h3>
+        <p>Soft sweet dumplings in sugar syrup.</p>
+        <h4>₹59/-per piece</h4>
+      </div>
+      <div class="more">
+        <h3>-----More------</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2 class="title">Food Gallery</h2>
+
+    <div class="gallery">
+      <img src="1.jpg" alt="">
+      <img src="2.jpg" alt="">
+      <img src="3.jpg" alt="">
+      <img src="4.jpg" alt="">
+      <img src="5.jpg" alt="">
+      <img src="6.jpg" alt="">
+      <img src="7.jpg" alt="">
+      <img src="8.jpg" alt="">
+
+    </div>
+  </section>
+
+  <!-- ONLINE ORDER -->
+  <section id="order">
+    <h2 class="title">Online Order</h2>
+
+    <form class="order-form">
+
+      <input type="text" placeholder="Full Name" required>
+
+      <input type="tel" placeholder="Phone Number" required>
+
+      <input type="text" placeholder="Delivery Address" required>
+
+      <select required>
+        <option value="">Select Food Item</option>
+        <option>Butter Chicken</option>
+        <option>Paneer Tikka</option>
+        <option>Hyderabadi Biryani</option>
+        <option>Masala Dosa</option>
+        <option>Chole Bhature</option>
+        <option>Gulab Jamun</option>
+      </select>
+
+      <input type="number" placeholder="Quantity" min="1" required>
+
+      <textarea rows="4" placeholder="Additional Instructions"></textarea>
+
+      <button type="submit">Place Order</button>
+
+    </form>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reservation">
+    <h2 class="title">Reserve a Table</h2>
+
+    <form class="reservation-form">
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <input type="tel" placeholder="Phone Number" required>
+
+      <input type="date" required>
+
+      <input type="time" required>
+
+      <textarea rows="4" placeholder="Special Request"></textarea>
+
+      <button type="submit">Reserve Now</button>
+
+    </form>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2 class="title white">Contact Us</h2>
+
+    <p>📍 One Bites indrapuri, Bhopal, Madhya Pradesh</p>
+    <p>📞 +91 8544965539</p>
+    <p>📧 onebites@email.com</p>
+    <p>🕒 Open Daily: 10 AM - 11 PM</p>
+  </section>
+
+  <footer>
+    <p>© 2026 One Bites Restaurant | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
